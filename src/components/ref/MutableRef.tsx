@@ -2,10 +2,10 @@ import { useEffect, useRef, useState } from "react";
 
 export const MutableRef = () => {
   const [timer, setTimer] = useState(0);
-  const interValRef = useRef(null);
+  const interValRef = useRef<number | null>(null);
 
   const stopTimer = () => {
-    window.clearInterval(interValRef.current);
+    if (interValRef.current) window.clearInterval(interValRef.current);
   };
 
   useEffect(() => {
