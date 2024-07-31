@@ -28,8 +28,8 @@ function App() {
   };
 
   const items: MyItem[] = [
-    { id: 1, name: "Item 1" },
-    { id: 2, name: "Item 2" },
+    { id: 1, name: "Item 5" },
+    { id: 2, name: "Item 3" },
   ];
 
   const handleClick = (item: MyItem) => {
